@@ -21,7 +21,7 @@ void sendData( int sockfd, int x ) {
   char buffer[32];
   sprintf( buffer, "%d\n", x );
   if ( (n = write( sockfd, buffer, strlen(buffer) ) ) < 0 )
-      error( const_cast<char *>( "ERROR writing to socket") );
+      error( const_cast<char *>( "ERROR writing to Socket") );
   buffer[n] = '\0';
 }
 
